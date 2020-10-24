@@ -19,19 +19,19 @@
 <div id="choropleth_map"></div>
 
 <h2>This is the second visualisation</h2>
-<div id="scatter_plot"></div>
+<div id="bubble_plot"></div>
 
 <script type="text/javascript">
   
-  var vis1 = "js/choropleth_map.vg.json";
+  var vis1 = "https://raw.githubusercontent.com/nyxke/homework9/main/cov1.json";
   
   vegaEmbed('#choropleth_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "js/scatter_plot_interactive.vg.json";
+  var vis2 = "https://raw.githubusercontent.com/nyxke/hm10/main/bubble.jsonn";
   
-  vegaEmbed('#scatter_plot', vis2).then(function(result) {
+  vegaEmbed('#bubble_plot', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
