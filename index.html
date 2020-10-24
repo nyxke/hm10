@@ -105,15 +105,16 @@
    
 <script type="text/javascript">
   var specVis1 = "https://raw.githubusercontent.com/nyxke/hm10/main/choro.json";
+    
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+   
   var specVis2= "https://raw.githubusercontent.com/nyxke/hm10/main/bubble.json";
 
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+  }).catch(console.error);        
 
   
 </script>
